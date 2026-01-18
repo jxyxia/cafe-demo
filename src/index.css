@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Aroma Haven Cafe Color Palette */
+    --background: 38 33% 97%; /* #FAF7F2 Cream Linen */
+    --foreground: 18 20% 30%; /* #5A4A42 Warm Charcoal */
+
+    --card: 38 33% 97%;
+    --card-foreground: 18 20% 30%;
+
+    --popover: 38 33% 97%;
+    --popover-foreground: 18 20% 30%;
+
+    --primary: 18 45% 12%; /* #2C1810 Rich Espresso Brown */
+    --primary-foreground: 38 33% 97%;
+
+    --secondary: 30 50% 65%; /* #D4A574 Warm Caramel */
+    --secondary-foreground: 18 45% 12%;
+
+    --muted: 30 20% 90%;
+    --muted-foreground: 18 20% 45%;
+
+    --accent: 14 58% 51%; /* #C85A3E Terracotta */
+    --accent-foreground: 38 33% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 18 45% 12%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 38 33% 95%;
+    --sidebar-foreground: 18 20% 30%;
+    --sidebar-primary: 18 45% 12%;
+    --sidebar-primary-foreground: 38 33% 97%;
+    --sidebar-accent: 30 50% 65%;
+    --sidebar-accent-foreground: 18 45% 12%;
+    --sidebar-border: 30 20% 85%;
+    --sidebar-ring: 14 58% 51%;
+
+    /* Custom Cafe Colors */
+    --espresso: 18 45% 12%;
+    --caramel: 30 50% 65%;
+    --cream: 38 33% 97%;
+    --terracotta: 14 58% 51%;
+    --warm-charcoal: 18 20% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Manrope', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fraunces', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Fraunces', serif;
+  }
+  .font-body {
+    font-family: 'Manrope', sans-serif;
+  }
+  .text-espresso {
+    color: #2C1810;
+  }
+  .text-caramel {
+    color: #D4A574;
+  }
+  .text-cream {
+    color: #FAF7F2;
+  }
+  .text-terracotta {
+    color: #C85A3E;
+  }
+  .text-warm-charcoal {
+    color: #5A4A42;
+  }
+  .bg-espresso {
+    background-color: #2C1810;
+  }
+  .bg-caramel {
+    background-color: #D4A574;
+  }
+  .bg-cream {
+    background-color: #FAF7F2;
+  }
+  .bg-terracotta {
+    background-color: #C85A3E;
+  }
+  .bg-warm-charcoal {
+    background-color: #5A4A42;
+  }
+  .border-caramel {
+    border-color: #D4A574;
+  }
+}
